@@ -74,3 +74,33 @@ a.remove("Dosa")
 print(a)
 b.pop(1)
 print(b)
+
+To find the occurrences of a number in an array
+
+ arr=[]
+n=int(input("Enter size of array "))
+for i in range(0,n):
+    element=int(input("Enter element of array "))
+    arr.append(element)
+print(" array: ",array)
+
+n=int(input("Enter element to check: "))
+print(n," has occurred ",array.count(n),"times")
+
+addition without using arithmetic operations
+
+a=10
+b=3
+result=a-(-b)
+print(result)
+ To find missing elements
+ arr=[]
+n=int(input("enter the size of array"))
+for i in range(0,n-1):
+    element=int(input("Enter element of array "))
+    arr.append(element)
+    arr.sort()
+print(" array: ",arr)
+for i in range(1,len(arr)+1):
+    if i not in arr:
+        print("missing element is",i)
